@@ -5,27 +5,6 @@
 body{
   background-color: rgb(170, 255, 255);
 }
-/* aqui teremos o uso de bootstrap */
-header {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  align-items: center;
-}
-
-header h1{
-  color: #1c1c1c;
-  font-family: 'Dongle', sans-serif;
-  font-size: 4rem;
-}
-
-header .menu a {
-  font-weight: bold;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-family: sans-serif;
-  color: black;
-}
 
 .container{
   display: grid;
@@ -94,7 +73,16 @@ header .menu a {
   background-color: black;
   color: white;
   margin-top: 2rem;
+  border-radius: 0.7rem;
+  transition: all 0.5s;
+  border-color: white;
 }
+
+.resume button:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgb(80, 80, 80));
+  filter: drop-shadow(15px 10px 5px rgb(80, 80, 80)); 
+}
+
 .resume a{
   text-decoration: none;
   color: #ffffff;
@@ -123,11 +111,11 @@ header .menu a {
   text-decoration: none;
   padding: 1rem 1rem;
   margin-top: 0.5rem;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: relative;
   cursor: pointer;
   border-color: white;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: white;
   transition: all 0.5s;
 }
